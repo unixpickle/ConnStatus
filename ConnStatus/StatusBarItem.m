@@ -30,13 +30,16 @@
   return self;
 }
 
-- (void)setHappy:(BOOL)happy lastConnected:(NSDate *)date {
+- (void)setHappy:(BOOL)happy {
   if (happy) {
     [statusItem setImage:[NSImage imageNamed:@"smile"]];
   } else {
     [statusItem setImage:[NSImage imageNamed:@"frown"]];
   }
-  [menuItem setTitle:[NSString stringWithFormat:@"Last ping was %@", date]];
+  if (happy) {
+    [menuItem setTitle:[NSString stringWithFormat:@"Last ping was %@",
+                        [NSDate date]]];
+  }
 }
 
 @end

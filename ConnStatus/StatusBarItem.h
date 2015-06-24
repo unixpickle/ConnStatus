@@ -13,6 +13,6 @@
   NSMenuItem * menuItem;
 }
 
-- (void)setHappy:(BOOL)happy lastConnected:(NSDate *)date;
+- (void)setHappy:(BOOL)happy;
 
 @end

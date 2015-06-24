@@ -18,10 +18,19 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
   statusBarItem = [[StatusBarItem alloc] init];
+  [[[Ping alloc] init] setDelegate:self];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
   // Insert code here to tear down your application
+}
+
+- (void)pingSucceeded {
+  [statusBarItem setHappy:YES];
+}
+
+- (void)pingTimeout {
+  [statusBarItem setHappy:NO];
 }
 
 @end

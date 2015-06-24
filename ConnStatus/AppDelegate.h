@@ -8,9 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 #import "StatusBarItem.h"
+#import "Ping.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate> {
+@interface AppDelegate : NSObject <NSApplicationDelegate, PingDelegate> {
   StatusBarItem * statusBarItem;
+  NSDate * lastSuccess;
 }
 
 @end

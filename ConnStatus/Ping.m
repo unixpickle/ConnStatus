@@ -33,20 +33,23 @@
       NSPipe * pipe = [[NSPipe alloc] init];
       NSTask * task = [[NSTask alloc] init];
       [task setLaunchPath:@"/sbin/ping"];
-      [task setArguments:@[@"/sbin/ping", @"-t 1", @"google.com"]];
+      [task setArguments:@[@"-t", @"1", @"-c", @"1", @"google.com"]];
       [task setStandardOutput:pipe];
+      [task setStandardError:[NSPipe pipe]];
       [task launch];
       [task waitUntilExit];
       NSData * data = [[pipe fileHandleForReading] readDataToEndOfFile];
       if (!data) {
         continue;
       }
-      NSString * str = [[NSString alloc] initWithUTF8String:[data bytes]];
+      NSString * str = [[NSString alloc] initWithData:data
+                                             encoding:NSUTF8StringEncoding];
       if ([str rangeOfString:@" 0.0% packet loss"].location == NSNotFound) {
         [self sendDelegateStatus:NO];
       } else {
         [self sendDelegateStatus:YES];
       }
+      sleep(1);
     }
   }
 }

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>155FDB03-1A4D-4C7D-9ECC-08D09E409650</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ConnStatus</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CC9847FE40BDB0BFAE1F861E7433ADA339490B20</key>
+		<string>https://github.com/unixpickle/ConnStatus.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ConnStatus.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CC9847FE40BDB0BFAE1F861E7433ADA339490B20</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/unixpickle/ConnStatus.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CC9847FE40BDB0BFAE1F861E7433ADA339490B20</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CC9847FE40BDB0BFAE1F861E7433ADA339490B20</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ConnStatus</string>
+		</dict>
+	</array>
+</dict>
+</plist>
