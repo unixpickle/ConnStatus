@@ -25,6 +25,7 @@
                   statusItemWithLength:NSVariableStatusItemLength];
     [statusItem setMenu:menu];
     [statusItem setImage:[NSImage imageNamed:@"frown"]];
+    [statusItem setAlternateImage:[NSImage imageNamed:@"frown_white"]];
     [statusItem setHighlightMode:YES];
   }
   return self;
@@ -33,8 +34,10 @@
 - (void)setHappy:(BOOL)happy {
   if (happy) {
     [statusItem setImage:[NSImage imageNamed:@"smile"]];
+    [statusItem setAlternateImage:[NSImage imageNamed:@"smile_white"]];
   } else {
     [statusItem setImage:[NSImage imageNamed:@"frown"]];
+    [statusItem setAlternateImage:[NSImage imageNamed:@"frown_white"]];
   }
   if (happy) {
     NSDateFormatter * formatter = [[NSDateFormatter alloc] init];
