@@ -24,14 +24,19 @@
     statusItem = [[NSStatusBar systemStatusBar]
                   statusItemWithLength:NSVariableStatusItemLength];
     [statusItem setMenu:menu];
-    [statusItem setImage:[NSImage imageNamed:@"smile"]];
+    [statusItem setImage:[NSImage imageNamed:@"frown"]];
     [statusItem setHighlightMode:YES];
   }
   return self;
 }
 
 - (void)setHappy:(BOOL)happy lastConnected:(NSDate *)date {
-  // TODO: this
+  if (happy) {
+    [statusItem setImage:[NSImage imageNamed:@"smile"]];
+  } else {
+    [statusItem setImage:[NSImage imageNamed:@"frown"]];
+  }
+  [menuItem setTitle:[NSString stringWithFormat:@"Last ping was %@", date]];
 }
 
 @end

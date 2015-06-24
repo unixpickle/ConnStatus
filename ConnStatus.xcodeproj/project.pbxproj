@@ -17,6 +17,7 @@
 		FA79B6751B3A41350075D605 /* smile.png in Resources */ = {isa = PBXBuildFile; fileRef = FA79B6711B3A41350075D605 /* smile.png */; };
 		FA79B6761B3A41350075D605 /* smile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA79B6721B3A41350075D605 /* smile@2x.png */; };
 		FA79B6791B3A42220075D605 /* StatusBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA79B6781B3A42220075D605 /* StatusBarItem.m */; };
+		FA79B67C1B3A46BF0075D605 /* Ping.m in Sources */ = {isa = PBXBuildFile; fileRef = FA79B67B1B3A46BF0075D605 /* Ping.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		FA79B6721B3A41350075D605 /* smile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smile@2x.png"; sourceTree = "<group>"; };
 		FA79B6771B3A42220075D605 /* StatusBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusBarItem.h; sourceTree = "<group>"; };
 		FA79B6781B3A42220075D605 /* StatusBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusBarItem.m; sourceTree = "<group>"; };
+		FA79B67A1B3A46BF0075D605 /* Ping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ping.h; sourceTree = "<group>"; };
+		FA79B67B1B3A46BF0075D605 /* Ping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ping.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				FA79B6511B3A3C520075D605 /* AppDelegate.m */,
 				FA79B6771B3A42220075D605 /* StatusBarItem.h */,
 				FA79B6781B3A42220075D605 /* StatusBarItem.m */,
+				FA79B67A1B3A46BF0075D605 /* Ping.h */,
+				FA79B67B1B3A46BF0075D605 /* Ping.m */,
 				FA79B6551B3A3C520075D605 /* Images.xcassets */,
 				FA79B6571B3A3C520075D605 /* MainMenu.xib */,
 				FA79B64E1B3A3C520075D605 /* Supporting Files */,
@@ -234,6 +239,7 @@
 				FA79B6791B3A42220075D605 /* StatusBarItem.m in Sources */,
 				FA79B6541B3A3C520075D605 /* main.m in Sources */,
 				FA79B6521B3A3C520075D605 /* AppDelegate.m in Sources */,
+				FA79B67C1B3A46BF0075D605 /* Ping.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
