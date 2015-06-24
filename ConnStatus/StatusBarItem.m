@@ -37,8 +37,10 @@
     [statusItem setImage:[NSImage imageNamed:@"frown"]];
   }
   if (happy) {
-    [menuItem setTitle:[NSString stringWithFormat:@"Last ping was %@",
-                        [NSDate date]]];
+    NSDateFormatter * formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"HH:mm:ss MMM dd, yyyy"];
+    [menuItem setTitle:[NSString stringWithFormat:@"Connected at %@",
+                        [formatter stringFromDate:[NSDate date]]]];
   }
 }
 
