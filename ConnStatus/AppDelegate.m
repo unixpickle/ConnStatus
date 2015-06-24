@@ -10,13 +10,14 @@
 
 @interface AppDelegate ()
 
-@property (weak) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSWindow * window;
+
 @end
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-  // Insert code here to initialize your application
+  statusBarItem = [[StatusBarItem alloc] init];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
